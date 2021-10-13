@@ -29,8 +29,8 @@ G_gaussian=(1-H_gaussian).*f_in;
 out_gaussian=real(ifft2(double(G_gaussian)));
 
 subplot(2,2,1),imshow(img),title('Original');
-subplot(2,2,2),imshow(out,[]),title('Ideal high pass filter');
-subplot(2,2,3),imshow(out_butterworth,[]),title('Butterworth high pass filter');
+subplot(2,2,2),imshow(out,[]),title('Ideal High pass filter');
+subplot(2,2,3),imshow(out_butterworth,[]),title('Butterworth High pass filter');
 subplot(2,2,4),imshow(out_gaussian,[]),title('Gaussian High Pass filter');
 
 
